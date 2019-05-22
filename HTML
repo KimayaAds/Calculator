@@ -1,0 +1,75 @@
+<div class="calculator">
+
+        <input type="text" class="Screendisplay" value="" disabled />
+        
+        <div class="Keys">
+          
+          <button type="button" class="operator" value="+">+</button>
+          <button type="button" class="operator" value="-">-</button>
+          <button type="button" class="operator" value="*">&times;</button>
+          <button type="button" class="operator" value="/">&divide;</button>
+      
+          <button type="button" value="7">7</button>
+          <button type="button" value="8">8</button>
+          <button type="button" value="9">9</button>
+      
+      
+          <button type="button" value="4">4</button>
+          <button type="button" value="5">5</button>
+          <button type="button" value="6">6</button>
+      
+      
+          <button type="button" value="1">1</button>
+          <button type="button" value="2">2</button>
+          <button type="button" value="3">3</button>
+      
+      
+          <button type="button" value="0">0</button>
+          <button type="button" class="decimal" value=".">.</button>
+          <button type="button" class="all-clear" value="all-clear">AC</button>
+      
+          <button type="button" class="equal-sign operator" value="=">=</button>
+      
+        </div>
+      </div>
+      <script>
+          const calculator = {
+  displayValue: '0',
+  firstOperand: null,
+  waitingForSecondOperand: false,
+  operator: null,
+};
+
+function updateDisplay() {
+  const display = document.querySelector('.Screendisplay');
+  display.value = calculator.displayValue;
+}
+
+updateDisplay();
+updateDisplay();
+
+const keys = document.querySelector('.keys');
+keys.addEventListener('click', (event) => {
+  const { target } = event;
+  if (!target.matches('button')) {
+    return;
+  }
+
+  if (target.classList.contains('operator')) {
+    console.log('operator', target.value);
+    return;
+  }
+
+  if (target.classList.contains('decimal')) {
+    console.log('decimal', target.value);
+    return;
+  }
+
+  if (target.classList.contains('all-clear')) {
+    console.log('clear', target.value);
+    return;
+  }
+
+  console.log('digit', target.value);
+});
+          </Script>
