@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Calculator</title>
+            <meta charset="utf-8">
+           
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="calculate.css">
+        
+        
+        </head>
+        <body>
+            <center>
+                    <form id="calculator"  name="calculator">
+                        
+                            <div class="relative">
+                                
+                            <div class="absolute"> 
+
+                                    <center><h2>Calculator</h2></center>
+
+                                    <input type="text"  id="display" disabled />
+                                    <br>
+                                    <br>
+                                        <input type="button"  class="btn btn-primary btn-lg"  value="1" onclick="input('1')" />
+                                        <input type="button"  class="btn btn-primary btn-lg"  value="2" onclick="input('2')" />
+                                        <input type="button"   class="btn btn-primary btn-lg "value="3" onclick="input('3')" />
+                                        <input type="button"   class="btn btn-primary btn-lg" value="+" onclick="setOperator('add')" />
+
+                                    <br>
+                                    <br>
+
+                                    <input type="button"   class="btn btn-primary btn-lg" value="4" onclick="input('4')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="5" onclick="input('5')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="6" onclick="input('6')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="-" onclick="setOperator('subtract')" />
+
+                                     <br>    
+                                     <br>
+
+                                    <input type="button"   class="btn btn-primary btn-lg" value="7" onclick="input('7')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="8" onclick="input('8')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="9" onclick="input('9')" />
+                                    <input type="button"  class="btn btn-primary btn-lg"value="*" onclick="setOperator('multiply')" />
+
+                                
+                                    <br>
+                                    <br>
+
+                                    <input type="button"  class="btn btn-primary btn-lg"  value="/" onclick="setOperator('divide')" />
+                                    <input type="button"   class="btn btn-primary btn-lg"  value="." onclick="decimal('.')" />
+                                    <input type="button"  class="btn btn-primary btn-lg" value="0" onclick="input('0')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="C" onclick="reset()" />
+                           
+
+                                    <br>
+                                    <br>
+
+                                    <input type="button"   class="btn btn-primary btn-lg" value="=" onclick="calculate()" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="M" onclick="previousResult()" />
+                    
+                            </div>
+                        </div>
+                            <p id="demo"></p> 
+                        </form>
+                </center>
+                <script src="calculate.js"></script>
+        </body>
+</html>
