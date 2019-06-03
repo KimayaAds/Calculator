@@ -1,25 +1,12 @@
-    div.relative{
 
-    position: relative;
-    width:1000px;
-    height:800px;
-    border:3px solid black;
 
-    }
-    div.absolute{
-
+    div.calculate {
+     
         position: absolute;
-        top:50px;
-        right:205px;
-        bottom:200px;
-        left:18%;
-        width:65%;
-        height:85%;
-        border:3px solid black;
+        top: 35%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
     }
-    .btn btn-primary btn-lg{
-        width: 20px;
-        height:15px;
-        transition: width 5s, height 5s, transform 2s;
 
-    }
+    
