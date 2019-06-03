@@ -13,37 +13,35 @@
         
         </head>
         <body>
-            <center>
+           
                     <form id="calculator"  name="calculator">
                         
-                            <div class="relative">
-                                
-                            <div class="absolute"> 
+                            
 
                                     <center><h2>Calculator</h2></center>
-
+                                <div class= "calculate">
                                     <input type="text"  id="display" disabled />
                                     <br>
                                     <br>
-                                        <input type="button"  class="btn btn-primary btn-lg"  value="1" onclick="input('1')" />
-                                        <input type="button"  class="btn btn-primary btn-lg"  value="2" onclick="input('2')" />
-                                        <input type="button"   class="btn btn-primary btn-lg "value="3" onclick="input('3')" />
+                                        <input type="button"  class="btn btn-primary btn-lg"  value="1" onclick="inputNumber('1')" />
+                                        <input type="button"  class="btn btn-primary btn-lg"  value="2" onclick="inputNumber('2')" />
+                                        <input type="button"   class="btn btn-primary btn-lg "value="3" onclick="inputNumber('3')" />
                                         <input type="button"   class="btn btn-primary btn-lg" value="+" onclick="setOperator('add')" />
 
                                     <br>
                                     <br>
 
-                                    <input type="button"   class="btn btn-primary btn-lg" value="4" onclick="input('4')" />
-                                    <input type="button"   class="btn btn-primary btn-lg" value="5" onclick="input('5')" />
-                                    <input type="button"   class="btn btn-primary btn-lg" value="6" onclick="input('6')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="4" onclick="inputNumber('4')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="5" onclick="inputNumber('5')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="6" onclick="inputNumber('6')" />
                                     <input type="button"   class="btn btn-primary btn-lg" value="-" onclick="setOperator('subtract')" />
 
                                      <br>    
                                      <br>
 
-                                    <input type="button"   class="btn btn-primary btn-lg" value="7" onclick="input('7')" />
-                                    <input type="button"   class="btn btn-primary btn-lg" value="8" onclick="input('8')" />
-                                    <input type="button"   class="btn btn-primary btn-lg" value="9" onclick="input('9')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="7" onclick="inputNumber('7')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="8" onclick="inputNumber('8')" />
+                                    <input type="button"   class="btn btn-primary btn-lg" value="9" onclick="inputNumber('9')" />
                                     <input type="button"  class="btn btn-primary btn-lg"value="*" onclick="setOperator('multiply')" />
 
                                 
@@ -52,7 +50,7 @@
 
                                     <input type="button"  class="btn btn-primary btn-lg"  value="/" onclick="setOperator('divide')" />
                                     <input type="button"   class="btn btn-primary btn-lg"  value="." onclick="decimal('.')" />
-                                    <input type="button"  class="btn btn-primary btn-lg" value="0" onclick="input('0')" />
+                                    <input type="button"  class="btn btn-primary btn-lg" value="0" onclick="inputNumber('0')" />
                                     <input type="button"   class="btn btn-primary btn-lg" value="C" onclick="reset()" />
                            
 
@@ -63,10 +61,10 @@
                                     <input type="button"   class="btn btn-primary btn-lg" value="M" onclick="previousResult()" />
                     
                             </div>
-                        </div>
-                            <p id="demo"></p> 
+                
+                           
                         </form>
-                </center>
+               
                 <script src="calculate.js"></script>
         </body>
 </html>
